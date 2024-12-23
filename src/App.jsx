@@ -11,7 +11,7 @@ function App() {
     <div className="mx-auto max-w-2xl px-4 py-10 md:py-20 text-center">
       <Header />
       <main className="max-w-[450px] mx-auto">
-        <DicesContainer dicesData={dicesData} />
+        <DicesContainer dicesData={dicesData} setDicesData={setDicesData} />
         <RollButton />
       </main>
     </div>

@@ -1,9 +1,9 @@
 import Dice from "./Dice"
 
-const DicesContainer = ({ dicesData }) => {
+const DicesContainer = ({ dicesData, setDicesData }) => {
 
   const diceElements = dicesData.map(dice => {
-    return <Dice diceData={dice} />
+    return <Dice key={dice.id} diceData={dice} setDicesData={setDicesData} />
   })
 
   return (
