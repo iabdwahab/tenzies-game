@@ -12,7 +12,7 @@ function App() {
       <Header />
       <main className="max-w-[450px] mx-auto">
         <DicesContainer dicesData={dicesData} setDicesData={setDicesData} />
-        <RollButton />
+        <RollButton setDicesData={setDicesData} />
       </main>
     </div>
   )
