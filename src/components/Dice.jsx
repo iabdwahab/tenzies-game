@@ -1,6 +1,6 @@
 const Dice = ({ diceData, setDicesData }) => {
   const { id, number, selected } = diceData;
-  const className = `border rounded shadow-md aspect-square font-bold text-2xl text-[#2B283A] ${selected ? 'bg-[#59E391]' : ''}`;
+  const className = `dice-button border rounded shadow-md aspect-square font-bold text-2xl text-[#2B283A] ${selected ? 'bg-primary' : ''}`;
 
   function handleClick() {
     setDicesData(prevData => {

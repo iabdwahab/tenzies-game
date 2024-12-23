@@ -6,37 +6,37 @@ export default [
   },
   {
     id: 2,
-    number: 5,
+    number: 1,
     selected: true,
   },
   {
     id: 3,
-    number: 5,
-    selected: false,
+    number: 1,
+    selected: true,
   },
   {
     id: 4,
-    number: 6,
+    number: 1,
     selected: true,
   },
   {
     id: 5,
     number: 1,
-    selected: false,
+    selected: true,
   },
   {
     id: 6,
-    number: 4,
-    selected: false,
+    number: 1,
+    selected: true,
   },
   {
     id: 7,
-    number: 3,
+    number: 1,
     selected: true,
   },
   {
     id: 8,
-    number: 5,
+    number: 1,
     selected: true,
   },
   {
@@ -46,7 +46,7 @@ export default [
   },
   {
     id: 10,
-    number: 4,
-    selected: false,
+    number: 1,
+    selected: true,
   },
 ];

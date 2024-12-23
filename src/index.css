@@ -5,3 +5,11 @@
 body {
   font-family: Inter, sans-serif;
 }
+
+.lose .dice-button {
+  @apply bg-wrong;
+}
+
+.won .dice-button {
+  @apply bg-correct;
+}
