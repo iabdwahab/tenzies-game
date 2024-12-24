@@ -13,7 +13,14 @@ function App() {
   const [rollsCount, setRollsCount] = useState(1);
   const mainSectionElement = useRef(null);
 
-  console.log(rollsCount)
+  function createNewGame() {
+    setDicesData(dicesList);
+    setIsGameOver(false);
+    setGameResult('');
+    setRollsCount(1);
+    mainSectionElement.current.classList.remove('won', 'lose');
+  }
+
   useEffect(() => {
 
     if (isAllSelected(dicesData)) {
@@ -32,7 +39,7 @@ function App() {
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-10 md:py-20 text-center">
-      {isGameOver && <Modal gameResult={gameResult} rollsCount={rollsCount} />}
+      {isGameOver && <Modal gameResult={gameResult} rollsCount={rollsCount} createNewGame={createNewGame} />}
       <Header />
       <main className="max-w-[450px] mx-auto" ref={mainSectionElement}>
         <DicesContainer dicesData={dicesData} setDicesData={setDicesData} />
