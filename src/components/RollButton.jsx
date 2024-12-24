@@ -1,7 +1,8 @@
-const RollButton = ({ setDicesData }) => {
-  const className = 'bg-black text-white font-bold w-full px-10 py-2 rounded text-lg ';
+const RollButton = ({ setDicesData, isGameOver, setRollsCount }) => {
+  const className = 'bg-black text-white font-bold w-full px-10 py-2 rounded text-lg disabled:bg-[#afafaf]';
 
   function handleClick() {
+    setRollsCount(prevRollsCount => prevRollsCount + 1)
 
     setDicesData(prevData => {
       return prevData.map(prevDice => {
@@ -19,7 +20,7 @@ const RollButton = ({ setDicesData }) => {
   }
 
   return (
-    <button className={className} onClick={handleClick}>Roll</button>
+    <button className={className} disabled={isGameOver} onClick={handleClick}>Roll</button>
   )
 }
 
